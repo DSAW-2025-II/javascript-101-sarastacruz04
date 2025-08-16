@@ -1,5 +1,9 @@
 // Sum of Two Numbers
 function sum(a, b) {
+  if (typeof a !== "number" || typeof b !== "number") {
+    console.log("Los datos de entrada no son adecuados");
+    return;
+  }
   return a + b;
 }
 
